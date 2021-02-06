@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #28c3c0;
+    --secondary-color: #FBF9F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* */
+}
+
+body {
+    background-image: url("login.jpg");
+}
+
+.homeSec {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* background-color: #fff; */
+    top: 20px;
+    left: 20px;
+}
+
+.homeSec a {
+    text-decoration: none;
+}
+
+.homeSec a .home {
+    width: 40px;
+    height: 40px;
+    opacity: .7;
+}
+
+.homeSec a .home:hover {
+    opacity: 1;
+}
+
+.card {
+    position: absolute;
+    width: 20%;
+    height: 35%;
+    top: 19%;
+    left: 41%;
+    background-color: ivory;
+    padding: 45px 8px;
+    border-radius: 50px;
+    /* box-shadow: 5px 10px 13px #28c3c0; */
+    border: 3px solid #28c3c0;
+}
+
+.card .header {
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.card .inputs {
+    margin: 61px 20px 0 20px;
+    padding: 16px 22px;
+}
+
+.card .inputs input {
+    width: 288px;
+    padding: 12px 8px;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    outline: none;
+}
+
+.card .inputs #ip_email {
+    margin-bottom: 30px;
+}
+
+.card .auth_helper {
+    padding: 0px 35px 0 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .auth_helper a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.card .questionSec {
+    margin-top: 20px;
+}
+
+.card .questionSec a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--primary-color); 
+    margin-left: 147px;
+}
+
+.card button {
+    margin: 59px 0 0 127px;
+    border: none;
+    padding: 12px;
+    width: 30%;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50px;
+}

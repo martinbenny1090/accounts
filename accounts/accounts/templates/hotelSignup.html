@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/assets/css/styles.css">
+    <title>ADITI | HOTEL SIGN-UP</title>
+</head>
+<body>
+    <div class="homeSec">
+        <a href="/dist/templates/index.html"><img src="/dist/assets/images/home.svg" alt="" class="home"></a>
+    </div>
+    <div class="cardH">
+        <h1 class="header">Create Account</h1>
+        
+
+        <form action="">
+            <div class="container">
+
+                <hr>
+                <div class="name">
+                    <input type="text" name="fname" id="fname" placeholder="Hotel Name">
+                    <input type="text" name="lname" id="lname" placeholder="Location">
+                </div>
+                <input type="email" name="email" id="email" placeholder="Email"><br>
+                <input type="email" name="cemail" id="c_email" placeholder="Re-enter E-mail"><br>
+                <input type="tel" name="phone" id="phn" placeholder="ZIP Code"><br>
+                <input type="password" name="pass" id="pass" placeholder="Password"><br>
+                <input type="password" name="cpass" id="c_pass" placeholder="Confirm Password">
+
+                <hr>
+
+                <button type="submit" class="registerbtn">Register</button>
+            </div>
+
+            <div class="container signin">
+                <p>Already have an account? <a href="{% url 'user:hotel_login' %}">Sign in</a>.</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

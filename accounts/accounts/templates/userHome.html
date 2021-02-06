@@ -1,0 +1,200 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADITI || USER-HOME</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<header class="user_header">
+    <div></div>
+    <div class="header__right-authSection">
+        <img src="{% static 'image/user.svg' %}" alt="" class="pro_img">
+        <div class="btn_group">
+            <a href="{% url 'user:login' %}"><button class="btn_border">Login</button></a>
+            <a href="{% url 'user:register' %}"><button>Sign Up</button></a>
+        </div>
+    </div>
+</header>
+
+<div class="master__options">
+
+    <div class="options">
+        <select name="cars" id="location">
+            <option disabled selected>Choose Location</option>
+            <option value="">Addu City</option>
+            <option value="">Dhidhdhoo</option>
+            <option value="">Kulhudhuffushi</option>
+            <option value="">Eydhafushi</option>
+            <option value="">Farukolhufunadhoo</option>
+            <option value="">Felidhoo</option>
+            <option value="">Funadhoo</option>
+            <option value="">Fuvahmulah</option>
+            <option value="">Gan</option>
+            <option value="">Hinnavaru</option>
+            <option value="">Hithadhoo</option>
+            <option value="">Hulhumalé</option>
+            <option value="">Hulhumeedhoo</option>
+            <option value="">Kudahuvadhoo</option>
+            <option value="">Magoodhoo</option>
+            <option value="">Mahibadhoo</option>
+            <option value="">Malé</option>
+            <option value="">Manadhoo</option>
+            <option value="">Maroshi</option>
+            <option value="">Meedhoo</option>
+            <option value="">Mula</option>
+            <option value="">Naifaru</option>
+            <option value="">Nolhivaranfaru</option>
+            <option value="">Thinadhoo</option>
+            <option value="">Ungoofaaru</option>
+            <option value="">Veymandhoo</option>
+            <option value="">Veymandoo</option>
+            <option value="">Viligili</option>
+
+        </select>
+        <!-- <select name="cars" id="checkin">
+            <option disabled selected>Check-In</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select> -->
+        <input type="date" name="checkin" id="checkin" placeholder="Check-In">
+        <!-- <select name="cars" id="checkout">
+            <option disabled selected>Check-Out</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select> -->
+        <input type="date" name="checkout" id="checkout" placeholder="Check-Out">
+        <select name="cars" id="rooms">
+            <option disabled selected>Rooms</option>
+            <option value="">Single</options>
+            <option value="">Double</options>
+            <option value="">Triple</options>
+            <option value="">Quad</options>
+            <option value="">Queen</options>
+            <option value="">King</options>
+            <option value="">Twin</options>
+            <option value="">Double-double</options>
+            <option value="">Studio</options>
+        </select>
+        <select name="cars" id="adults">
+            <option disabled selected>Adults</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+        </select>
+        <select name="cars" id="children">
+            <option disabled selected>Children</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">More than 5</option>
+        </select>
+        <button class="search">SEARCH</button>
+    </div>
+</div>
+
+<body>
+    <div class="hero__container">
+        <div class="wrapper">
+            <div class="display-tiles">
+                <div class="content">
+                    <div class="item">
+                        <strong class="alert">PREMIUM</strong><br>
+                        <strong>HOTELS</strong>
+                    </div>
+                    <div class="subContent">
+                        <h6>TAILOR-MADE <br> FOR YOU</h6>
+                    </div>
+                    <button class="explore">
+                        EXPLORE NOW
+                    </button>
+                </div>
+                <img src="{% static 'image/tile1.jpg' %}" alt="">
+            </div>
+            <div class="display-tiles">
+                <div class="content">
+                    <div class="item">
+                        <strong>ROOMS <br> FOR</strong>
+                        <strong class="alert">TWO</strong>
+                    </div>
+                    <div class="subContent">
+                        <h6>SPEND GREAT <br> TIME TOGETHER</h6>
+                    </div>
+                    <button class="explore">
+                        EXPLORE NOW
+                    </button>
+                </div>
+                <img src="{% static 'image/tile1.jpg' %}" alt="">
+            </div>
+            <div class="offer-tiles">
+                <h1>
+                    80
+                    <span>
+                        <div><small>%</small></div>
+                    </span>
+                    <span>
+                        <div><small>off</small></div>
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="content__holder">
+        <div class="content-heading">
+            <h3>POPULAR CITIES IN MALDIVES</h3>
+        </div>
+        <div class="city_tiles">
+            <div class="block">
+                <h1 class="header-text">BAA TOLL</h1>
+                <img src="{% static 'image/tile1.jpg' %}" alt="">
+            </div>
+            <div class="block">
+                <h1 class="header-text">DHIGURAH</h1>
+                <img src="{% static 'image/tile1.jpg' %}" alt="">
+            </div>
+            <div class="block lb">
+                <h1 class="header-text">THULUSDHOO</h1>
+                <img src="{% static 'image/tile1.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="content__holder2">
+        <div class="content-heading2">
+            <h3>BROWSE BY PROPERTY TYPE</h3>
+        </div>
+        <div class="city_tiles2">
+            <div class="block2">
+                <h1 class="header-text2">BAA TOLL</h1>
+                <img src="{% static 'image/tile1.jpg' %}" alt="">
+            </div>
+            <div class="block2">
+                <h1 class="header-text2">DHIGURAH</h1>
+                <img src="{% static 'image/tile1.jpg' %}" alt="">
+            </div>
+            <div class="block2 lb2">
+                <h1 class="header-text2">THULUSDHOO</h1>
+                <img src="{% static 'image/tile1.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

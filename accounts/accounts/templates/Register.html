@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADITI | Sign Up</title>
+</head>
+<body>
+    <div class="card">
+        <h1 class="header">Create Account</h1>
+        <form action="register" method="post">
+        {% csrf_token %}
+        <input type="text" name="fname" id="fname" placeholder="First Name"><br>
+        <input type="text" name="lname" id="lname" placeholder="Last Name"><br>
+        <input type="email" name="email" id="email" placeholder="Email"><br>
+        <input type="password" name="pass" id="pass" placeholder="Password"><br>
+        <input type="password" name="cpass" id="c_pass" placeholder="Confirm Password"><br>
+        <input type="submit"><br>
+    </form>
+    <div>
+            {% for message in messages %}
+            <div class="alert alert-primary" role="alert">
+              <h5> {{message}} </h5>
+            </div>
+            {% endfor %}
+          </div>
+    </div>
+</body>
+</html>

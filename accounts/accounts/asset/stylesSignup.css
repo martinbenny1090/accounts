@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #28c3c0;
+    --secondary-color: #FBF9F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* */
+}
+
+body {
+    background: url(login.jpg);
+}
+
+.homeSec {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* background-color: #fff; */
+    top: 20px;
+    left: 20px;
+}
+
+.homeSec a {
+    text-decoration: none;
+}
+
+.homeSec a .home {
+    width: 40px;
+    height: 40px;
+    opacity: .7;
+}
+
+.homeSec a .home:hover {
+    opacity: 1;
+}
+
+.card {
+    position: absolute;
+    width: 20%;
+    height: 39%;
+    top: 19%;
+    left: 41%;
+    background-color: ivory;
+    padding: 45px 8px;
+    border-radius: 50px;
+    /* box-shadow: 5px 10px 13px #28c3c0; */
+    border: 3px solid #28c3c0;
+}
+
+.card .header {
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.card input {
+    padding: 8px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.card #fname,#lname {
+    margin-top: 12%;
+}
+
+.card #email {
+    width: 94%;
+}
+
+.card #c_email {
+    width: 94%;
+}
+
+.card #phn {
+    width: 94%;
+}
+
+.card #pass {
+    width: 94%;
+}
+
+.card #c_pass {
+    width: 94%;
+}
+
+.card button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50px;
+    margin: 43px 0 0 151px;
+}
+
+.card .cancel {
+    text-decoration: none;
+    font-size: 10px;
+    margin-left: 41%;
+    letter-spacing: 5px;
+    color: #28c3c0;
+}
